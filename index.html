@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stress Less, Live More</title>
+        <!--Metadata starts here-->
+        <meta charset="utf-8">
+        <meta name="keywords" content="Stress, Stress Management">
+        <meta name="description" content="A website about stress management">
+        <meta name="author" content="Janet Vistal">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet"
+        href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Lesson.html">Lesson</a>
+                <a href="Quiz.html">Quiz</a>
+            </nav>
+        </header>    
+        <main>
+            <h1>Stress Less, Live More - A Stress Management Essentials</h1>
+            <p> Ready to rewrite your stress story? Embark on a transformative journey with "Stress Less, Live More" stress management course.   In this short course you will gain practical tools, insights and recognize the importance of self-reflection to help you thrive in the face of stress.</p>
+            <!--Correction: change of filename for image source-->
+            <img class="stress" src="Img/stresshomepage.png" alt="A man stressed out in front of his laptop" width="600px"> 
+            <h2> A. Learning Outcome</h2>
+            <p>By the end of this lesson, you will be able to &colon;</p>
+            <ul>
+                <li> Reflect the common stressors faced as students.</li>
+                <li> Assess your level of stress using a self-assessment tool.</li>
+                <li> Explain the effects of stress to both mental and physical well-being.</li>
+                <li> Compare three different techniques in managing stress.</li>
+                <li> Apply one stress management technique.</li>    
+            </ul>
+            <div id="videointro">
+                <h2>B. Video Introduction &colon; Academic Stress </h2>
+                <h3>How familiar do these situations feel to you?</h3>
+                <p> As you watch the video below, take a moment to reflect on the causes of stress as students.</p>
+            <div class="videowrapper">  
+                <iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/lG0K6a3226k?si=9kRgxcyG396YHOdD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div> 
+                 <p id="info"></p> 
+            </div>
+        </main>
+        <footer>
+            <div class="footer-center">
+            <p>Everyday brings a choice: To practice stress or to practice peace - Joan Borysenko (TOP 25 QUOTES BY JOAN Z. BORYSENKO | A-Z Quotes, n.d.)</p>
+            </div>
+        </footer>
+        <script>
+            let file ="fetch-info.txt"
+            fetch (file)
+            .then(response => response.text())
+            .then(displayText => document.getElementById("info").innerHTML = displayText);
+        </script>
+    </body>
+</html>
